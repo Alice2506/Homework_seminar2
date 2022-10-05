@@ -42,7 +42,31 @@ if (number > 99 && number < 1000)
     }
   }
 }
-//GetThird();
+GetThird();
+
+// Задача 15
+Console.WriteLine("Введите порядковый номер дня недели (от 1 до 7 включительно): ");
+void GetDayOfWeek()
+{
+  int dayNumber = int.Parse(Console.ReadLine());
+  if (dayNumber > 0 && dayNumber < 6)
+  {
+    Console.WriteLine("День недели не выходной");
+  } 
+  else 
+  {
+    if (dayNumber > 5 && dayNumber < 8)
+    {
+      Console.WriteLine("День недели выходной");
+    }
+    else
+    {
+      Console.WriteLine("Введенное число не является порядковым номером дня недели");
+    }
+  }
+}
+GetDayOfWeek();  
+ 
 
 
 
